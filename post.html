@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test post</title>
+    <script src="js/libs/marked.min.js"></script>
+    <script src="js/posts.js"></script>
+    <!--<link href="/index.css" rel="stylesheet" type="text/css" media="all">-->
+</head>
+
+
+<body>
+    <p> Petit texte</p>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadMarkdownFile('posts/test.md');
+        });
+    </script>
+    <div id="markdown-output"></div>
+</body>
+
+
+</html>
