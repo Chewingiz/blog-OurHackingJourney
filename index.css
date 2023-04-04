@@ -1,4 +1,5 @@
 body {
+    border-style: solid;
     background-color: #E5E7E6;
     width: 960px;
     margin: 8px auto;
@@ -10,23 +11,69 @@ body {
     border-radius: 40px 40px 25px 25px;
 }
 
+header {
+    padding-top: 10px;
+}
+
 footer {
     background-color: #93441A;
-    -webkit-border-radius: 0px 0px 40px 40px;
-    -moz-border-radius: 0px 0px 40px 40px;
-    border-radius: 0px 0px 40px 40px;
+    -webkit-border-radius: 0px 0px 20px 20px;
+    -moz-border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 20px 20px;
 }
 
 body section {
-    -webkit-border-radius: 10px 10px 20px 20px;
-    -moz-border-radius: 10px 10px 20px 20px;
-    border-radius: 10px 10px 20px 20px;
+    border-style: solid;
+    border-width: 1px;
     background-color: #EEE6D8;
 }
 
-body section div {
+.auteur,
+.date {
+    color: grey;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    line-height: 1;
+}
+
+.box {
+    margin-top: -10px;
     background-color: #DAAB3A;
-    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#info {
+    background-color: #DAAB3A;
+    width: 800px;
+    border-radius: 10px 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-style: solid;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-width: 1px;
+}
+
+#info h2 {
+    margin-bottom: -30px;
+}
+
+#info br {
+    text-align: left;
+}
+
+.container {
+    overflow: hidden;
+    background-color: #DAAB3A;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
